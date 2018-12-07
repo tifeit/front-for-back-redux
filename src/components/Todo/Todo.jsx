@@ -12,7 +12,7 @@ export default class Todo extends React.Component {
     const { todo, onDelete } = this.props
     return (
       <div className={`${styles.wrapper} br-md m-b shadow-md p-a `}>
-        <div>
+        <div style={{backgroundColor: todo.color}}>
           <h4 className="text-accent">{todo.text}</h4>
           {new Date(todo.ts).toUTCString()}
         </div>
